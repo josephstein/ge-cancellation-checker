@@ -69,7 +69,7 @@ def notify_sms(settings, avail_apt):
     try:
         from twilio.rest import TwilioRestClient
     except ImportError:
-        logging.warning('Trying to send SMS, but TwilioRestClient not installed. Try \'pip install twilio\'')
+        logging.warning('Trying to send SMS, but Twilio is not installed. Try \'pip install twilio\'')
         return
 
     try:
